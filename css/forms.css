@@ -40,6 +40,6 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color:#002ead;
+  background-color:#44AB4F;
   transition: 0.7s;
 }
