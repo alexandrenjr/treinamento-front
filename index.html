@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UFT-8" />
+    <meta name="author" content="Alexandre Nascimento, Jr." />
+    <meta
+      name="description"
+      content="Essa página contém tudo que estoou aprendedo de HTML. :)"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+    <title>My First Web Page</title>
+  </head>
+
+  <body>
+    <section id="hello-world">
+      <h1>Hello World!</h1>
+      <hr>
+    </section>
+
+    <nav>
+      <h2>Índice:</h2>
+      <ul>
+        <li>
+          <a href="#text-format">Tipos de formatação de texto</a>
+        </li>
+        <li>
+          <a href="#listas">Tipos de listas</a>
+        </li>
+        <li>
+          <a href="#links"><i>Links</i></a>
+        </li>
+        <li>
+          <a href="#imagens">Imagens</a>
+        </li>
+        <li>
+          <a href="#quick-tips">Quick tips</a>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+
+    <section id="text-format">
+      <h2>
+        Tipos de formatação de texto:
+      </h2>
+      <p>Temos o texto em <strong>negrito</strong> ou <b>negrito</b>.</p>
+      <p>Temos o texto <em>enfatizado</em> (ou em <i>itálico</i>).</p>
+      <p>Também tem o texto <abbr title="abreviado">abr.</abbr></p>
+      <p>Temos o espaço &nbsp dado pelo comando &amp;nbsp.</p>
+      <address>
+        E claro, não podemos esquecer do texto para endereços:<br>
+        Rua Azul, 13, Jardim Amarela<br>
+        Campo Verde, Brasil
+      </address>
+      <hr>
+    </section>
+
+    <section id="listas">
+      <h2>Tipos de listas:</h2>
+    
+      <li>Linha não alinhada 1</li>
+      <li>Linha não alinhada 2</li>
+
+      <ul>
+        <li>Linha não ordenada alinhada 1</li>
+        <li>Linha não ordenada alinhada 2</li>
+      </ul>
+
+      <ol>
+        <li>Linha enumerada alinhada 1</li>
+        <li>Lista enumerada alinhada 2</li>
+      </ol>
+
+      <ol>
+        <ol>
+          <li>Lista enumerada aninhada alinhada 1</li>
+          <li>Lista enumerada aninhada alinhada 2</li>
+        </ol>
+      </ol>
+
+      <dl>
+        <dt>Linha descritiva 1</dt>
+        <dd>Linha descritiva 1 detalhada 1;</dd>
+        <dd>Linha descritiva 1 detalhada 2.</dd>
+
+        <dt>Linha descritiva 2</dt>
+        <dd>Linha descritiva 2 detalhada 1;</dd>
+        <dd>Linha descritiva 2 detalhada 2.</dd>
+      </dl>
+      <hr>
+    </section>
+
+    <section id="links">
+      <h2><i>Links:</i></h2>
+      <ol>
+        <li>
+          Isso é um exemplo de um <a href="https://pt.wikipedia.org/wiki/Links"><i>link</i></a> embutido.
+        </li>
+        <li>
+          <a href="revision.html">Isso</a> também é um exemplo de um link embutido.
+        </li>
+        <li>
+          É possível criar um <em>link</em> que baixe alguma mídia. Como exemplo, pode-se criar um <i>link</i> que baixe o <a href="html5.png" download="">ícone desta página</a>.
+        </li>
+        <li>
+          Outro recurso interessante é direcionar um <i>link</i> para um <i><a href="mailto:email@email.com">e-mail</a></i>.
+        </li>
+        <li>
+          Sem surpresa nenhuma, é possível ligar para um <a href="tel:+556791768088">número de telefone</a>.
+        </li>
+      </ol>
+    </section>
+    <hr>
+
+    <section id="imagens">
+      <h2>Imagens</h2>
+      <ul>
+        <li>
+          Para adicionar uma imagem, basta usar a <i>tag</i> <i>img</i> e definir a fonte (<i>src</i>) da mídia.
+        </li>
+        
+        <img src="img/STScI-01GA6KKWG229B16K4Q38CH3BXS.png"
+          alt="JamesWebb.png"
+          class="center"
+          title="James Webb Telescope (lazy loading)"
+          width="70%"
+          loading="lazy"
+        >
+        <figcaption>
+          James Webb. Imagem com <i>loading lazy</i>.
+        </figcaption>
+
+        <img src="img/STScI-01GA76RM0C11W977JRHGJ5J26X.png"
+          alt="JamesWebb.png"
+          class="center"
+          title="James Webb Telescope (eager loading)"
+          width="70%"
+          loading="eager"
+        >
+        <figcaption>
+          James Webb. Imagem com <i>loading eager</i>.
+        </figcaption>
+      </ul>
+    </section>
+    <hr>
+
+    <section id="quick-tips">
+      <h2><i>Quick tips</i></h2>
+      <ul>
+        <li>
+          É possível escrever o atalho de uma <i>tag</i> seguido de um * mais um número <i>n</i>, onde substitui tal bloco pela <i>tag</i> vezes <i>n</i>. Exemplo: <i>br &#42 3</i>.
+          <hr>
+          <hr>
+          <hr>
+        </li>
+      </ul>
+    </section>
+    <br>
+
+    <section>
+      <h2>Alguns Elementos de Campos</h2>
+      <input name="valuex" type="number"
+        11 value="12.4" step="0.2"
+        12 min="0" max="20" />
+      <br>
+      <input name="valuex" type="range"
+        11 value="50" step="10"
+        12 min="0" max="100" />
+      <br>
+      <input name="valuex" type="color"
+        11 value="12.4" step="0.2"
+        12 min="0" max="20" />
+      <br>
+      <input name=”login” autofocus >
+    </section>
+
+    &gt;&gt;&gt; &copy <a href="https://github.com/alexandrenjr/">Alexandre Nascimento, Jr.</a> &lt;&lt;&lt;
+
+    <p>
+      <a href="#">Voltar ao topo</a>
+    </p>
+  </body>
+</html>
